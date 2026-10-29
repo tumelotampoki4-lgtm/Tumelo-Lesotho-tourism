@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore Lesotho The Kingdom in the sky</title>
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+    <!--Header and Navigation -->
+
+        <header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">Lesotho Tourism</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="mainMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link " href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+<li class="nav-item">
+
+<a class="nav-link" href="services.html">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="contact.html">Contact/Booking</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section with Light Background and Dark Text -->
+ <section class="bg-white text-dark py-5 mb-4 border-bottom">
+ <div class="container">
+<div class="row">
+<div class="col-md-8">
+<h1 class="display-4 fw-bold text-dark mb-2">Contacts & Booking form</h1>
+<p class="lead text-muted mb-0">Explore the breathtaking highlands of the Kingdom in the Sky.</p>
+ </div>
+</div>
+ </div>
+</section>
+
+<!-- contacts info -->
+<section class="container my-4">
+<h2 class="mb-3">Contact Us</h2>
+
+<div class="row g-3">
+
+<div class="col-md-4">
+
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title">Office Location</h5>
+<p class="card-text">
+We are located at Lesotho, Maseru 100, Moshoeshoe 1.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title">Telephone number</h5>
+<p class="card-text">
+Feel free to contact us 
++266 58940328.
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title">Email Address</h5>
+<p class="card-text">
+You can also email us on <a href="lesothotourism@gmail.com">lesothotourism@gmail.com</a>
+</p>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Registratio Form -->
+<section class="container my-4" id="contact">
+<h2>Registration</h2>
+
+<form>
+ <!--Full Name -->   
+<div class="mb-3">
+<label for="studentName" class="form-label">
+Full Name
+</label>
+<input type="text" class="form-control"
+id="studentName" placeholder="Enter your name">
+</div>
+<!-- Email Address -->
+<div class="mb-3">
+<label for="studentEmail" class="form-label">
+Email Address
+</label>
+<input type="email" class="form-control"
+id="studentEmail" placeholder="Enter your email"></div>
+
+<!-- Phone Number -->
+<div class="mb-3"> 
+<label for="phone" class="form-label">Phone Number:</label> 
+ <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required> 
+ </div>
+
+<!-- Gender Info -->
+<div class="mb-3">
+<fieldset class="border p-3 rounded"> 
+ <legend class="float-none w-auto px-2 fs-6 fw-bold">Gender</legend> 
+ <div class="form-check">
+<input type="radio" class="form-check-input" id="male" name="gender" value="male" required> 
+ <label class="form-check-label" for="male">Male</label> 
+</div>
+<div class="form-check">
+<input type="radio" class="form-check-input" id="female" name="gender" value="female"> 
+<label class="form-check-label" for="female">Female</label> 
+</div>
+<div class="form-check">
+<input type="radio" class="form-check-input" id="other" name="gender" value="other"> 
+<label class="form-check-label" for="other">Other</label> 
+</div>
+</fieldset> 
+</div>
+
+<!-- Password -->
+<div class="mb-3"> 
+<label for="password" class="form-label">Password:</label> 
+ <input type="password" class="form-control" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required> 
+</div>
+
+    <!-- Confirm Password -->
+<div class="mb-3"> 
+<label for="confirmPassword" class="form-label">Confirm Password:</label> 
+<input type="password" class="form-control" id="confirmPassword" name=" confirmPassword" minlength="8" placeholder="Minimum 8 characters" required> 
+</div> 
+
+
+ 
+
+<button type="submit" class="btn btn-primary"onclick="myFunction()" >Submit</button>
+
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 Lesotho Tourism.</p>
+        <p>Designed by Tumelo Tampoki</p>
+        <p>Contact: +266 5894 0328</p>
+        <p>Location: Maseru, Lesotho</p>
+        <p><a href="mailto:tumelotampoki4@gmail.com">tumelotampoki4@gmail.com</a></p>
+    </footer>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- JavaScript file -->
+ <script src="script.js"></script>
+           </body>
+           </html>

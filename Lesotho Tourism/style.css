@@ -1,0 +1,359 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: sans-serif;}
+
+body{
+background-color: #f0f0f0;}
+
+.card-container{
+display: flex;
+justify-content: center;
+flex-wrap:wrap;
+margin-top: 100px;
+}
+.card{
+width:325px;
+background-color:#f0f0f0 ;
+border-radius:8px ;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: 20px;
+}
+
+.card img{
+	width: 100%;
+height: auto;
+}
+
+.card-content{
+padding:16px ;}
+
+.card-content h3{
+font-size: 28px;
+margin-bottom: 8px;
+}
+
+.card-content p{
+color: #666;
+font-size: 15px;
+line-height: 1.3;
+}
+
+.card-content .btn {
+display:inline-block;
+padding: 8px 16px;
+background-color:#333;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color: #fff;}
+
+.custom-card .card-text {
+    color: #666 !important;
+}
+
+
+/* table*/
+table   {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+caption {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+}
+
+th {
+  background-color: #1f4e79;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ==========================================================================
+   Global & Document Canvas Layout
+   ========================================================================== */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+/* Constrain the core slideshow bounding box */
+.container {
+    position: relative;
+    max-width: 960px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Force layout footer elements safely to bottom */
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+footer a {
+    color: #0dcaf0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/* Position the image container */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit of see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side-by-side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnails */
+.demo {
+  opacity: 0.6;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+@charset "UTF-8";
+
+/* ==========================================================================
+   1. GLOBAL STYLES & CUSTOM VARIABLES
+   ========================================================================== */
+:root {
+  --primary-color: #0d6efd;       /* Bootstrap blue default */
+  --accent-color: #fd7e14;        /* Warm accent for "Sky Kingdom" vibes */
+  --accent-hover: #e06d0f;
+  --dark-overlay: rgba(33, 37, 41, 0.75);
+  --card-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Fixes scrolling issues when navbar is fixed/sticky */
+main {
+  min-height: calc(100vh - 200px);
+}
+
+/* ==========================================================================
+   2. HERO CAROUSEL COMPONENT
+   ========================================================================== */
+#hero-carousel {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carousel-img {
+  height: 65vh;               /* Fits comfortably on screens without spilling */
+  min-height: 400px;          /* Ensures structural viewports on mobile devices */
+  object-fit: cover;          /* Crops gracefully, prevents distortion */
+  object-position: center;    /* Keeps the focus on the mountain/dam landscapes */
+}
+
+/* Background Opacity Custom Layer */
+.bg-dark-opacity {
+  background-color: var(--dark-overlay);
+  backdrop-filter: blur(4px); /* Modern frosted-glass texture effect */
+}
+
+/* ==========================================================================
+   3. BUTTONS & INTERACTIVE ELEMENTS
+   ========================================================================== */
+.btn-custom-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: var(--card-transition);
+}
+
+.btn-custom-accent:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(253, 126, 20, 0.3);
+}
+
+/* ==========================================================================
+   4. DESTINATION CARDS COMPONENT
+   ========================================================================== */
+.custom-card {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: var(--card-transition);
+  background-color: #ffffff;
+}
+
+/* Hover Zoom & Shadow Float Effect */
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.custom-card .card-img-top {
+  height: 220px;
+  object-fit: cover;          /* Standardizes card aspect ratios evenly */
+  transition: var(--card-transition);
+}
+
+/* Subtle image scale expansion on card focus */
+.custom-card:hover .card-img-top {
+  filter: brightness(1.05);
+}
+
+.custom-card .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card .card-title {
+  font-weight: 700;
+  color: #2b3035;
+  margin-bottom: 0.75rem;
+}
+
+.custom-card .card-text {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: #495057;
+  flex-grow: 1;               /* Forces card action buttons to align linearly */
+}
+
+/* ==========================================================================
+   5. FOOTER STYLING
+   ========================================================================== */
+footer {
+  border-top: 4px solid var(--accent-color); /* Elegant brand separator line */
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE DESIGN TWEAKS
+   ========================================================================== */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 50vh;             /* Reduces scale real-estate safely on mobile layout frames */
+  }
+  
+  /* Forces slide texts to load instead of disappearing below standard breakpoints */
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem 1rem !important;
+    background-color: #212529 !important;
+    border-radius: 0;
+  }
+}
